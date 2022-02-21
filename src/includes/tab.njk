@@ -1,0 +1,29 @@
+{% macro field(name) %}
+<section class="document box column is-two-fifths">
+    <header>
+        <h3 class="title is-4">{{ name }}</h3>
+
+        <div class="tabs is-right">
+            <ul>
+                <li data-tab="graph" class="is-active"><a>Graphe</a></li>
+                <li data-tab="doc"><a>Documentation</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="bodies">
+        <div data-tab="graph" class="is-active">
+            <div class="mermaid">
+                graph TD 
+                A[Client] --> B[Load Balancer] 
+                B --> C[Server1] 
+                B --> D[Server2]
+            </div>
+        </div>
+
+        <div data-tab="doc">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nulla commodi eligendi rerum esse! Deleniti et tenetur nam obcaecati accusantium.</p>
+        </div>
+    </main>
+</section>
+{% endmacro %}

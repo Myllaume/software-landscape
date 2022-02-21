@@ -1,0 +1,29 @@
+{
+  "name": "software-landscape",
+  "version": "1.0.0",
+  "description": "Decompose the graph of a software.",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd src && npx @11ty/eleventy",
+    "serve": "cd src && npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Myllaume/software-landscape.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/Myllaume/software-landscape/issues"
+  },
+  "homepage": "https://github.com/Myllaume/software-landscape#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "js-yaml": "^4.1.0"
+  },
+  "dependencies": {
+    "bulma": "^0.9.3",
+    "mermaid": "^8.14.0"
+  }
+}

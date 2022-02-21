@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Paysage logiciel</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/bulma.css">
+</head>
+
+<body>
+
+    {% import "tab.njk" as tab %}
+
+    <main class="doc-list columns is-multiline">
+        {{ tab.field("Class n°1") }}
+        {{ tab.field("Class n°2") }}
+        {{ tab.field("Class n°3") }}
+        {{ tab.field("Class n°4") }}
+        {{ tab.field("Class n°5") }}
+    </main>
+
+    <script src="./assets/mermaid.js"></script>
+    <script src="./assets/main.js"></script>
+
+</body>
+
+</html>
